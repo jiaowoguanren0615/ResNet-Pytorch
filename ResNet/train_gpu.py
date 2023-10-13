@@ -23,10 +23,10 @@ def get_args_parser():
     parser.add_argument('--epochs', default=5, type=int)
 
     # Dataset parameters
-    parser.add_argument('--data_root', default='/usr/local/Huangshuqi/ImageData/flower_data', type=str,
+    parser.add_argument('--data_root', default='/flower_data', type=str,
                         help='dataset path')
     parser.add_argument('--input-size', default=224, type=int)
-    parser.add_argument('--batch-size', default=8, type=int) # consume 8G GPU-Memory
+    parser.add_argument('--batch-size', default=8, type=int) # consume 932MB GPU-Memory
     parser.add_argument('--num_classes', default=5, type=int)
     parser.add_argument('--output_dir', default='./save', help='path where to save, empty for no saving')
     parser.add_argument('--device', default='cuda', help='device to use for training / testing')
